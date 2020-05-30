@@ -1,4 +1,4 @@
-# Java Project 6
+ 
 This project about incredible java
 
 ##### TODO:
