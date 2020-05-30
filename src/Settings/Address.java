@@ -12,9 +12,8 @@ public class Address {
         ZipCode
      */
 
-    private String Address1;
-    private String City;
-    private String ZipCode;
+
+
 
     private static ArrayList<String> cityList = new ArrayList<>();
 
@@ -40,12 +39,6 @@ public class Address {
 
      */
 
-    public String Address1(String myAddress) {
-        Address1 = myAddress;
-
-        return myAddress;
-    }
-
 
     /*
         Create a method name is City
@@ -58,17 +51,8 @@ public class Address {
         if the first condition is false
         private City (which comes from class variable) equal to myCity
 
-
      */
 
-    public String City(String myCity) {
-        if (!cityList.contains(myCity)) {
-            return "We are not able to ship to your location";
-        } else {
-            City = myCity;
-        }
-        return myCity;
-    }
 
     /*
         Create a method name is ZipCode
@@ -82,16 +66,6 @@ public class Address {
         private ZipCode (which comes from class variable) equal to myZipcode
 
      */
-
-    public String ZipCode(String myZipcode) {
-        int len = myZipcode.length();
-        if (len != 5) {
-            return "Zip code length should be 5";
-        } else {
-            ZipCode = myZipcode;
-        }
-        return myZipcode;
-    }
 
 
 }

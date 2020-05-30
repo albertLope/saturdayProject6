@@ -9,8 +9,6 @@ public class Items {
 
      */
 
-    private double price;
-    private static double allUserPrice;
 
     /*
         Create a method name is ItemName
@@ -42,33 +40,7 @@ public class Items {
 
      */
 
-    public void ItemName(String myItem) {
-        switch (myItem) {
-            case "Rose teddy bear":
-                price = price + 30;
-                break;
-            case "Iphone max":
-                price = price + 850.23;
-                break;
-            case "laptop mouse":
-                price = price + 23.50;
-                break;
-            case "Monitor":
-                price = price + 90.23;
-                break;
-            case "charger":
-                price = price + 43.20;
-                break;
-            case "hdmi cable":
-                price = price + 5.90;
-                break;
-            case "mug":
-                price = price + 15.79;
-                break;
 
-        }
-
-    }
 
     /*
         Create a method name is colorPrice
@@ -91,23 +63,7 @@ public class Items {
      */
 
 
-    public void colorPrice(String color) {
-        switch (color) {
-            case "Red":
-                price = price + 10;
-                break;
-            case "Blue":
-                price = price + 6;
-                break;
-            case "Black":
-                price = price + 4;
-                break;
-            case "White":
-                price = price + 2;
-                break;
-        }
 
-    }
     /*
     Create a method name is customText
     return type is double
@@ -121,17 +77,11 @@ public class Items {
 
      */
 
-    public double customText(boolean myCondition, String text) {
-        if (myCondition == true && text.length() > 10) {
-            price = price + 5;
-        } else if (myCondition == true && text.length() <= 10) {
-            price = price + 3;
-        }
-        return price;
-    }
+
 
 
     /*
+
         Create a method name is AddtoAllUserPrice
         return type is void
         no parameter
@@ -140,9 +90,7 @@ public class Items {
 
      */
 
-    public void AddtoAllUserPrice() {
-        allUserPrice += price;
-    }
+
 
 
     /*
@@ -153,8 +101,6 @@ public class Items {
         return the allUserPrice
      */
 
-    public static double getAllUserPrice() {
-        return allUserPrice;
-    }
+
 
 }

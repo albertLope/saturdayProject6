@@ -13,9 +13,8 @@ public class UserNameAndPassword {
 
      */
 
-    private String userName;
-    private String password;
-    private static ArrayList<String> UserNameLists = new ArrayList<>();
+
+
     /*
        Given default constructor.
     */
@@ -60,7 +59,7 @@ public class UserNameAndPassword {
         return Username length should be more then 6
 
         if the myUsername contains space(" ")
-        return  Username should not contain space
+        return  Username should NOT contain space
 
         if the myUsername does NOT contains @
         return Username should contain @ symbol
@@ -74,23 +73,6 @@ public class UserNameAndPassword {
         and return the username
 
     */
-
-    public String setUsername(String myUserName) {
-        int len = myUserName.length();
-        if (len < 6) {
-            return "Username length should be more then 6";
-        } else if (myUserName.contains(" ")) {
-            return "Username should not contain space";
-        } else if (!myUserName.contains("@")) {
-            return "Username should contain @ symbol";
-        } else if (UserNameLists.contains(myUserName)) {
-            return "return Username should be unique";
-        } else {
-            userName = myUserName;
-        }
-
-        return userName;
-    }
 
 
     /*
@@ -108,16 +90,5 @@ public class UserNameAndPassword {
 
      */
 
-    public String setPassword(String myPassword) {
-        int len = myPassword.length();
-
-        if (len <= 5) {
-            return "Password length more then 5 character";
-        } else {
-            password = myPassword;
-
-        }
-        return myPassword;
-    }
 
 }
